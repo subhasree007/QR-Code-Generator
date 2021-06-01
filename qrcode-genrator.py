@@ -1,7 +1,6 @@
 import qrcode
 from qrcode.main import QRCode
 
-
 qr = qrcode.QRCode(
 
     version= 1,
@@ -15,8 +14,9 @@ qr.add_data(link)
 qr.make(fit=True)
 
 img = qr.make_image(fill = 'black',back_color = 'white')
-
 img.save("weblink.png")
+
+
 
 
 
